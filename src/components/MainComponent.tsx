@@ -1,11 +1,9 @@
-export default function MainComponent({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+import styles from "./maincomponent.module.css";
+
+export default function MainComponent() {
   return (
     <>
-      <main>{children}</main>
+      <main className={styles.main}>main</main>
     </>
   );
 }

@@ -1,0 +1,8 @@
+.main {
+  grid-area: main;
+  background: linear-gradient(
+    var(--dark-deep-purple-main),
+    var(--light-deep-purple-main)
+  );
+  color: var(--white);
+}

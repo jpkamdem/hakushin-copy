@@ -1,0 +1,16 @@
+.nav {
+  grid-area: nav;
+  background: linear-gradient(
+    to right,
+    var(--light-purple-nav),
+    var(--deep-purple-nav)
+  );
+  color: var(--white);
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    display: block;
+  }
+}
