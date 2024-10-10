@@ -68,6 +68,14 @@
     padding: 5px;
   }
 
+  .navlink {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
   .burger-menu:hover {
     background: var(--hover-color);
   }

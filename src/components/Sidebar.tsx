@@ -9,6 +9,7 @@ export default function Sidebar() {
   const [toggleView, setToggleView] = useState(false);
   function toggleAside() {
     setToggleView(!toggleView);
+    console.log(toggleView);
   }
   return (
     <>
@@ -19,7 +20,7 @@ export default function Sidebar() {
           </Link>
           <p>Hakush.in</p>
         </div>
-        <ul className={(styles.navlink, toggleView ? styles.show : "")}>
+        <ul className={`${styles.navlink} ${toggleView ? styles.show : ""}`}>
           <Link to="/">
             <li>
               <img className={styles["nav-logo"]} src={homeLogo} alt="" />
