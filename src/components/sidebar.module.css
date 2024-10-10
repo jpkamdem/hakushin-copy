@@ -13,6 +13,29 @@
   align-items: center;
 }
 
+.navlinks {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1em;
+}
+
+.nav-logo {
+  width: 32px;
+}
+
+.navlinks-item {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  padding: 1em;
+}
+
+.navlinks-item:hover,
+.navlinks-item:active {
+  background: var(--hover-color);
+  border-radius: 5px;
+}
+
 .logo {
   padding: 2em 0 1em 0;
   width: 159px;

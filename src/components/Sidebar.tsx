@@ -18,10 +18,18 @@ export default function Sidebar({ isOpen }: Props) {
           <p>Hakush.in</p>
         </div>
 
-        <ul>
+        <ul className={styles.navlinks}>
           <Link to="/">
-            <img className={styles["nav-logo"]} src={homeLogo} alt="" />
-            Home
+            <li className={styles["navlinks-item"]}>
+              <img className={styles["nav-logo"]} src={homeLogo} alt="" />
+              Home
+            </li>
+          </Link>
+          <Link to="/">
+            <li className={styles["navlinks-item"]}>
+              <img className={styles["nav-logo"]} src={homeLogo} alt="" />
+              Home
+            </li>
           </Link>
         </ul>
       </aside>

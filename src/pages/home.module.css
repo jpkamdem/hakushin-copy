@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  height: 250px;
+  align-items: end;
+  justify-content: center;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+  height: 110px;
+}
