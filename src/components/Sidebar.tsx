@@ -3,8 +3,13 @@ import styles from "./sidebar.module.css";
 import logo from "../assets/hakushin_logo.svg";
 import homeLogo from "../assets/CommonTabIcon.webp";
 import burgerMenu from "../assets/menu.svg";
+import { useState } from "react";
 
 export default function Sidebar() {
+  const [toggleView, setToggleView] = useState(false);
+  function toggleAside() {
+    setToggleView(!toggleView);
+  }
   return (
     <>
       <aside>
@@ -14,7 +19,7 @@ export default function Sidebar() {
           </Link>
           <p>Hakush.in</p>
         </div>
-        <ul className={styles.navlink}>
+        <ul className={(styles.navlink, toggleView ? styles.show : "")}>
           <Link to="/">
             <li>
               <img className={styles["nav-logo"]} src={homeLogo} alt="" />
@@ -22,7 +27,12 @@ export default function Sidebar() {
             </li>
           </Link>
         </ul>
-        <img className={styles["burger-menu"]} src={burgerMenu} alt="" />
+        <img
+          onClick={toggleAside}
+          className={styles["burger-menu"]}
+          src={burgerMenu}
+          alt=""
+        />
       </aside>
     </>
   );

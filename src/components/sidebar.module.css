@@ -30,7 +30,6 @@
 }
 
 .navlink a {
-  text-decoration: none;
   color: var(--white);
 }
 
@@ -40,7 +39,7 @@
 }
 
 .navlink li:hover {
-  background: #6366f1;
+  background: var(--hover-color);
   border-radius: 5px;
 }
 
@@ -60,16 +59,17 @@
     width: auto;
   }
 
-  .navlink {
-    display: none;
-  }
-
   .burger-menu {
     position: absolute;
-    right: 10px;
+    right: 15px;
     display: block;
     width: 20px;
     height: 20px;
+    padding: 5px;
+  }
+
+  .burger-menu:hover {
+    background: var(--hover-color);
   }
 
   .logo-container {
