@@ -12,8 +12,12 @@
     position: fixed;
     display: none;
     width: 256px;
-    height: calc(100vh - 19px);
-    top: 19px;
+    height: calc(100vh - 69.6px);
+    top: 69.6px;
     z-index: 10;
+  }
+
+  .show {
+    display: block;
   }
 }
