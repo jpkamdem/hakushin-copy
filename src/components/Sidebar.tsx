@@ -9,7 +9,6 @@ export default function Sidebar() {
   const [toggleView, setToggleView] = useState(false);
   function toggleAside() {
     setToggleView(!toggleView);
-    console.log(toggleView);
   }
   return (
     <>

@@ -1,7 +1,7 @@
 export default function NotFound() {
   return (
     <>
-      <p>Mauvais url</p>
+      <p>404</p>
     </>
   );
 }
