@@ -7,6 +7,17 @@
   color: var(--white);
 }
 
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  padding: 2em 0 1em 0;
+  width: 159px;
+}
+
 @media (max-width: 1024px) {
   .aside {
     position: fixed;
@@ -15,6 +26,10 @@
     height: calc(100vh - 69.6px);
     top: 69.6px;
     z-index: 10;
+  }
+
+  .logo-container {
+    display: none;
   }
 
   .show {

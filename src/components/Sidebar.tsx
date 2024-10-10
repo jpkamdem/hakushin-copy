@@ -10,14 +10,15 @@ interface Props {
 export default function Sidebar({ isOpen }: Props) {
   return (
     <>
-      <aside className={styles.aside}>
+      <aside className={`${styles.aside} ${isOpen ? styles.show : ""}`}>
         <div className={styles["logo-container"]}>
           <Link to="/">
             <img className={styles.logo} src={logo} alt="Hakushin icon" />
           </Link>
+          <p>Hakush.in</p>
         </div>
 
-        <ul className={`${styles.navlink} ${isOpen ? styles.show : ""}`}>
+        <ul>
           <Link to="/">
             <img className={styles["nav-logo"]} src={homeLogo} alt="" />
             Home
